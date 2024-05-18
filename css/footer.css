@@ -1,0 +1,48 @@
+@import "reset.css";
+
+.footer{
+	background-color: #f5f5dc;
+	height: 25vh;
+	padding: 20px 0 20px 20px;
+	margin-top: 1.5%;
+}
+
+.contato{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.proprietario{
+	margin-top:0.25%;
+}
+
+.footer h1{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.proprietario h2{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.proprietario p{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+	.proprietario h2{
+		font-size: 20px;
+	}
+
+	.proprietario p{
+		font-size: 20px;
+	}
+}

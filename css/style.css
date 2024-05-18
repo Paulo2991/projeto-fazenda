@@ -1,0 +1,120 @@
+@import "reset.css";
+@import "header.css";
+@import "footer.css";
+
+.card{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 20px;
+	justify-content: center;
+}
+
+.sobre{
+	padding: 20px;
+	border-radius: 2em;
+	width: 45vw;
+	height: 30vh;
+	background-color: white;
+}
+
+.descritionSobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.descritionSobre h1{
+	font-size: 30px;
+	text-align: center;
+}
+
+.descritionSobre p{
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.fotos{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.imagens{
+	width: 30%;
+	height: 30%;
+	padding: 25px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.imagens img{
+	width: 28vw;
+	height: 28vh;
+}
+
+.imagens p{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.imagens button{
+	width: 50%;
+	height: 15%;
+	border-radius: 2px;
+	padding: 5px;
+	cursor: pointer;
+	background-color: green;
+	color: white;
+}
+
+@media screen and (max-width: 842px){
+	.sobre{
+		height: 35vh;
+	}
+
+	.descritionSobre p{
+		font-size: 28px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 758px){	
+	.descritionSobre p{
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.sobre{
+		height: 40vh;
+	}
+
+	.fotos{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.imagens p{
+		font-size: 15px;
+	}
+
+}
+
+@media screen and (max-width: 425px){
+	.descritionSobre p{
+		font-size: 16px;
+		font-weight: bold;
+	}
+}
+
+
+
