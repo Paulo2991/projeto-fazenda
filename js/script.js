@@ -17,11 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
-	function mostrarEventos(button,type){
-		button.forEach(function(){
-			if(type === true){
-
-			}
+	function mostrarDescricao(modalDescription){
+		descriptionModal.forEach(function (modalContent) {
+			modalContent.innerHTML = modalDescription;
 		});
 	}
 
@@ -41,10 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		<p>
 		O seu terreno dos sonhos está te esperando. Vai deixar passar essa oportunidade? Tudo começa com um terreno. As grandes oportunidades surgem a partir dele. Lugar tranquilo que permite você caminhe todas as manhãs de forma agradável e uma belissima cachoeira. Próximo da sede e 1 ribeirão com águas límpidas e cristalinas rodeando parte da prorpriedade.
 		</p>`;
-
-		descriptionModal.forEach(function (modalContent) {
-			modalContent.innerHTML = modalDescription;
-		});
+		mostrarDescricao(modalDescription);
 	}
 
 	eventosButton(sobre,true);

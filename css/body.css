@@ -27,9 +27,8 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
-	gap: 2rem;
-	padding: 0.30%;
+	justify-content: center;
+	margin-top: 2%;
 }
 
 .imagens{
@@ -77,7 +76,7 @@
 	font-size: 25px;
 	text-align: center;
 }
- 
+
 .descritionSobre p {
 	font-size: 25px;
 	text-align: center;
@@ -143,7 +142,7 @@
 
 	.fotos{
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		gap: 0.90em;
 	}
 
