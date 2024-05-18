@@ -1,6 +1,6 @@
 @import "reset.css";
 
-.card{
+.card {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -8,7 +8,7 @@
 	justify-content: center;
 }
 
-.sobre{
+.sobre {
 	padding: 20px;
 	border-radius: 2em;
 	width: 45vw;
@@ -16,35 +16,26 @@
 	background-color: white;
 }
 
-.descritionSobre{
+.descritionSobre {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 
-.descritionSobre h1{
-	font-size: 25px;
-	text-align: center;
-}
-
-.descritionSobre p{
-	font-size: 25px;
-	text-align: center;
-	font-weight: bold;
-}
-
-.fotos{
+.fotos {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	gap: 2rem;
+	padding: 0.30%;
 }
 
 .imagens{
 	width: 30%;
 	height: 30%;
-	padding: 25px;
+	padding: 15px;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
@@ -52,19 +43,49 @@
 	justify-content: center;
 }
 
-.imagens img{
-	width: 28vw;
-	height: 28vh;
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
 }
 
-.imagens p{
-	font-size: 25px;
+.descriptionModal {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px 0 60px;
+	border: 1px solid #888;
+	width: 80%;
+	max-width: 500px;
+	border-radius: 5px;
+}
+
+.close {
+	color: #54595e;
+	float: right;
+	font-size: 28px;
 	font-weight: bold;
 	text-align: center;
+	margin-bottom: 10px;
 }
 
-.imagens button{
-	width: 50%;
+.descritionSobre h1 {
+	font-size: 25px;
+	text-align: center;
+}
+ 
+.descritionSobre p {
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.descritionSobre button {
+	width: 45%;
 	height: 15%;
 	border-radius: 2px;
 	padding: 5px;
@@ -73,18 +94,35 @@
 	color: white;
 }
 
+.descriptionModal p { 
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
 
-@media screen and (max-width: 842px){
+.imagens img {
+	width: 28vw;
+	height: 28vh;
+}
+
+.imagens h2 {
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 842px) {
 	.descritionSobre p{
 		font-size: 15px;
 	}
 
-	.imagens p{
+	.imagens h2{
 		font-size: 15px;
 	}
 }
 
-@media screen and (max-width: 758px){	
+@media screen and (max-width: 758px) {	
 	.descritionSobre p{
 		font-size: 15px;
 	}
@@ -98,14 +136,14 @@
 	}
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
 	.sobre{
 		height: 25vh;
 	}
 
 	.fotos{
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		gap: 0.90em;
 	}
 
@@ -113,20 +151,20 @@
 		width: 40vw;
 	}
 
-	.descritionSobre h1{
+	.descritionSobre h1 {
 		font-size: 15px;
 	}
 
-	.descritionSobre p{
+	.descritionSobre p {
 		font-size: 15px;
 	}
 
 
-	.imagens p{
+	.imagens h2 {
 		font-size: 15px;
 	}
 
-	.imagens button{
+	.descritionSobre button {
 		width: 100%;
 	}
 
@@ -141,11 +179,11 @@
 		font-size: 10px;
 	}
 
-	.imagens p{
+	.imagens h2{
 		font-size: 10px;
 	}
 
-	.imagens button{
+	.descritionSobre button{
 		font-size: 10px;
 	}
 }
