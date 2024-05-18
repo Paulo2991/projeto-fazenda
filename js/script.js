@@ -37,7 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
 		let modalDescription = `
 		<span class="close">&times;</span>
 		<p>
-		O seu terreno dos sonhos está te esperando. Vai deixar passar essa oportunidade? Tudo começa com um terreno. As grandes oportunidades surgem a partir dele. Lugar tranquilo que permite você caminhe todas as manhãs de forma agradável e uma belissima cachoeira. Próximo da sede e 1 ribeirão com águas límpidas e cristalinas rodeando parte da prorpriedade.
+		O seu terreno dos sonhos está te esperando. 
+		Vai deixar passar essa oportunidade? 
+		Tudo começa com um terreno. 
+		As grandes oportunidades surgem a partir dele. 
+		Lugar tranquilo que permite que você caminhe todas as manhãs de forma 
+		agradável e uma belissima cachoeira
+		próximo da sede, 1 ribeirão com águas límpidas 
+		e cristalinas rodeando parte da propriedade.
 		</p>`;
 		mostrarDescricao(modalDescription);
 	}
