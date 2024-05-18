@@ -1,0 +1,139 @@
+@import "reset.css";
+
+.card{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 20px;
+	justify-content: center;
+}
+
+.sobre{
+	padding: 20px;
+	border-radius: 2em;
+	width: 45vw;
+	height: 30vh;
+	background-color: white;
+}
+
+.descritionSobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.descritionSobre h1{
+	font-size: 25px;
+	text-align: center;
+}
+
+.descritionSobre p{
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.fotos{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.imagens{
+	width: 30%;
+	height: 30%;
+	padding: 25px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.imagens img{
+	width: 28vw;
+	height: 28vh;
+}
+
+.imagens p{
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.imagens button{
+	width: 50%;
+	height: 15%;
+	border-radius: 2px;
+	padding: 5px;
+	cursor: pointer;
+	background-color: green;
+	color: white;
+}
+
+
+@media screen and (max-width: 842px){
+	.descritionSobre p{
+		font-size: 20px;
+	}
+
+	.imagens p{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 758px){	
+	.descritionSobre p{
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.sobre{
+		height: 25vh;
+	}
+
+	.fotos{
+		display: flex;
+		flex-direction: row;
+		gap: 0.90em;
+	}
+
+	.imagens{
+		width: 40vw;
+	}
+
+	.descritionSobre h1{
+		font-size: 15px;
+	}
+
+
+	.imagens p{
+		font-size: 15px;
+	}
+
+	.imagens button{
+		width: 100%;
+	}
+
+	.imagens img{
+		width: 36vw;
+		height: 20vh;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.descritionSobre p{
+		font-size: 10px;
+	}
+
+	.imagens p{
+		font-size: 10px;
+	}
+
+	.imagens button{
+		font-size: 10px;
+	}
+}

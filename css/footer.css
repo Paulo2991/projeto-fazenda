@@ -11,7 +11,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
 
@@ -20,19 +20,19 @@
 }
 
 .footer h1{
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
 }
 
 .proprietario h2{
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
 }
 
 .proprietario p{
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
 }
@@ -44,5 +44,39 @@
 
 	.proprietario p{
 		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.footer h1{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 654px){
+	.footer h1{
+		font-size: 10px;
+	}
+
+	.proprietario h2{
+		font-size: 10px;
+	}
+
+	.proprietario p{
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.footer h1{
+		font-size: 12px;
+	}
+
+	.proprietario h2{
+		font-size: 12px;
+	}
+
+	.proprietario p{
+		font-size: 12px;
 	}
 }
