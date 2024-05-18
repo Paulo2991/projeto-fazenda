@@ -76,7 +76,7 @@
 
 @media screen and (max-width: 842px){
 	.descritionSobre p{
-		font-size: 20px;
+		font-size: 15px;
 	}
 
 	.imagens p{
@@ -86,7 +86,15 @@
 
 @media screen and (max-width: 758px){	
 	.descritionSobre p{
-		font-size: 18px;
+		font-size: 15px;
+	}
+
+	.imagens{
+		width: 40vw;
+	}
+
+	.imagens img{
+		width: 36vw;
 	}
 }
 
@@ -106,6 +114,10 @@
 	}
 
 	.descritionSobre h1{
+		font-size: 15px;
+	}
+
+	.descritionSobre p{
 		font-size: 15px;
 	}
 
