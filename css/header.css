@@ -19,19 +19,57 @@
 	color: red;
 }
 
+.menuHambuguer{
+	display: none;
+}
+
 @media screen and (max-width: 600px){
 	.cabecalho{
 		display: flex;
 		justify-content: flex-end;
+		padding: 12px;
+		height: 18vh;
 	}
 
 	.items{
-		display: flex;
-		flex-direction: column;
-		gap: 0.25rem;
+		display: none;
+		position: absolute;
 	}
 
 	.item a{
 		font-size: 14px;
+	}
+
+	.menuHambuguer{
+		display: flex;
+		padding: .5rem 1rem;
+		font-size: 1rem;
+		border: none;
+		background: none;
+		cursor: pointer;
+		gap: .5rem;
+	}
+
+	.nav.active .items{
+		display: block;
+	}
+
+	.menu{
+		display: block;
+		border-top: 2px solid;
+		width: 20px;
+	}
+
+	.menu::after, .menu::before{
+		content: '';
+		display: block;
+		width: 20px;
+		height: 2px;
+		background: currentColor;
+		margin-top: 5px;
+	}
+
+	.nav.active .menu{
+		background-color: blue;
 	}
 }

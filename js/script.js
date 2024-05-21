@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const descriptionModal = document.querySelectorAll('.descriptionModal');
 	const myModal = document.getElementById('myModal');
 	const closeButtons = document.querySelectorAll('.close');
+	const hambuguer = document.getElementById('hambuguer');
 
 	function eventosButton(button,type){
 		if(type === true){
@@ -50,5 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	eventosButton(sobre,true);
+
+	function toggleMenu(){
+		const nav = document.getElementById('nav');
+		nav.classList.toggle('active');
+	}
+
+	hambuguer.addEventListener('click',toggleMenu);
+
 });
 

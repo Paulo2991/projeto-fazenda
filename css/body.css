@@ -102,6 +102,16 @@
 .imagens img {
 	width: 28vw;
 	height: 35vh;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+
+.imagens img:hover{
+	-moz-transform: scale(1.8);
+	-webkit-transform: scale(1.8);
+	transform: scale(1.8);
 }
 
 .imagens h2 {
@@ -170,6 +180,12 @@
 	.imagens img{
 		width: 36vw;
 		height: 20vh;
+	}
+
+	.imagens img:hover{
+		-moz-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
 	}
 }
 
