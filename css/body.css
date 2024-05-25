@@ -197,6 +197,10 @@
 }
 
 @media screen and (max-width: 425px){
+	.descritionSobre h1 {
+		font-size: 12px;
+	}
+
 	.descritionSobre p{
 		font-size: 10px;
 	}
